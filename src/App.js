@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Title from './styles/styled-banner';
-
-const logoUri = 'https://civileats.com/wp-content/uploads/2016/03/jgold1.jpg';
+import { Hero, Heading } from './styles/styled-hero';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <Title>Jonathan Gold's</Title>
-          <h3>101 Best resturants</h3>
-          <img src={logoUri} />
-        </div>
+        <Hero>
+          <Heading>Jonathan Gold's 101 Best Resturants</Heading>
+        </Hero>
+        <p>Hello World</p>
       </div>
     );
   }
