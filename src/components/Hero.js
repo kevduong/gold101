@@ -1,9 +1,22 @@
 import React, { Component } from 'react';
-import Hero from '../styles/styled-hero';
+import {
+  StyledHero,
+  Heading,
+  Subheading2,
+  Subheading3,
+  Subheading4,
+} from '../styles/styled-hero';
 
 class Hero extends Component {
   render() {
-    return <div className="Hero"></div>;
+    return (
+      <StyledHero>
+        <Heading>Jonathan Gold's</Heading>
+        <Subheading2>101</Subheading2>
+        <Subheading3>BEST</Subheading3>
+        <Subheading4>Restaurants</Subheading4>
+      </StyledHero>
+    );
   }
 }
 
