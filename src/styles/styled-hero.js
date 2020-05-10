@@ -43,7 +43,7 @@ export const Subheading3 = styled.h2`
   grid-column: 1;
 `;
 
-export const Subheading4 = styled.h2`
+export const Subheading4 = styled.h3`
   font: 700 55px/1 ${theme.fontFamily};
   text-transform: uppercase;
   color: ${theme.primaryColor};
