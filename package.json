@@ -4,17 +4,28 @@
   "private": true,
   "dependencies": {
     "firebase": "^7.14.3",
+    "jest-cli": "^26.0.1",
+    "jest-regex-util": "^26.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-map-gl": "^5.2.5",
     "react-scripts": "0.9.5",
     "styled-components": "^5.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@types/jest": "^25.2.1",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "react-test-renderer": "^16.13.1",
+    "regenerator-runtime": "^0.13.5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest --watchAll",
     "eject": "react-scripts eject"
   }
 }
