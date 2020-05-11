@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import firebase from './Firestore';
 
-class Testing extends Component {
+class Restaurants extends Component {
   constructor(props) {
     super(props);
 
@@ -9,6 +9,9 @@ class Testing extends Component {
       restaurantRef: firebase.firestore().collection('restaurants'),
       restaurants: [],
       names: [],
+      phones: [],
+      reviews: [],
+      websites: [],
     };
   }
 
@@ -21,6 +24,9 @@ class Testing extends Component {
         this.setState({
           restaurants: this.state.restaurants.concat(restaurant),
           names: this.state.names.concat(restaurant.name),
+          phones: this.state.phones.concat(restaurant.phone),
+          reviews: this.state.reviews.concat(restaurant.review),
+          websites: this.state.websites.concat(restaurant.website),
         });
       });
     });
@@ -32,7 +38,7 @@ class Testing extends Component {
 
   render() {
     const restaurants = this.state.restaurants.map((r, i) => (
-      <li key={i}>{r.name}</li>
+      <li key={i}>{r}</li>
     ));
 
     return (
@@ -49,4 +55,4 @@ class Testing extends Component {
   }
 }
 
-export default Testing;
+export default Restaurants;
