@@ -5,16 +5,14 @@ import Restaurants from './components/Restaurants';
 import Map from './components/Map';
 
 class App extends Component {
-  constructor() {
-    super();
-  }
-
   render () {
     return (
-      <Hero></Hero>
-      <Restaurants></Restaurants>
-      <Map></Map>
-    )
+      <div>
+        <Hero></Hero>
+        <Restaurants></Restaurants>
+        <Map></Map>
+      </div>
+    );
   }
 }
 
